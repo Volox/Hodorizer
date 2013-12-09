@@ -1,6 +1,6 @@
 // Hodor hodor hodor, ...
 var words = [
-  'hodoor',
+  'hodor',
   'hodor',
   'h\u00F6-dor',
   'HODO\u00D6OR',
@@ -21,7 +21,10 @@ function hodorize(node) {
     node.textContent = hodor;
     return;
   } else if (node.nodeType === Node.ELEMENT_NODE) {
-
+	
+	if( node.nodeName==='IMG' )
+	  node.src='http://volox.github.io/Hodorizer/images/hodor.png';
+	
     // hodo-hodor hodor
     for (var i = 0; i < node.childNodes.length; ++i) {
       // Hodorize hodor
