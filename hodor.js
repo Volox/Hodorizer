@@ -24,6 +24,8 @@ function hodorize(node) {
 	
 	if( node.nodeName==='IMG' )
 	  node.src='http://volox.github.io/Hodorizer/images/hodor.png';
+	if( node.nodeName==='A' )
+	  node.href='http://www.youtube.com/watch?v=EiazMhG7ZM8';
 	
     // hodo-hodor hodor
     for (var i = 0; i < node.childNodes.length; ++i) {
