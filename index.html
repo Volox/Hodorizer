@@ -23,7 +23,16 @@
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=200265506828609";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
+    <a href="https://github.com/Volox/Hodorizer"><img style="position: absolute; top: 0; right: 0; border: 0;" src="images/hodor-github.png" alt="Hodor on GitHub"></a>
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -39,11 +48,52 @@
             <a title="hodor" href="javascript:(function(){var s=document.createElement('script');s.src='https://raw.github.com/Volox/Hodorizer/master/hodor.min.js';document.body.appendChild(s);})();" class="bookmarklet">Hodorize!</a>
             to your bookmark bar and click it whenever you need to <u title="Hodor">really</u> understand what a page is about.
           </p>
+
+          <h3>Spread the <u title="hodor">only</u> word!</h3>
+          <div class="row">
+            <div class="col-md-3 text-center">
+              <!-- G+ -->
+              <div class="g-plus" data-action="share" data-annotation="vertical-bubble" data-height="60"></div>
+              <script type="text/javascript">
+                (function() {
+                  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                  po.src = 'https://apis.google.com/js/platform.js';
+                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                })();
+              </script>
+            </div>
+            <div class="col-md-3 text-center">
+              <!-- FB -->
+              <div class="fb-like" data-href="http://volox.github.io/Hodorizer/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+            </div>
+            <div class="col-md-3 text-center">
+              <!-- TW -->
+              <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              
+            </div>
+            <div class="col-md-3 text-center">
+
+            </div>
+          </div>
           <hr>
           <p>Inspired by <a href="http://hodoripsum.com/">hodoripsum</a> and <a href="http://mybart.fr/hodorify">hodorify</a>.
         </div>
-        <div class="col-md-6 text-right">
+        <div class="col-md-6 text-center">
           <img class="hodor" src="images/hodor.png" title="Hodor!" alt="Hodor!">
+          <!-- I am hungry -->
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_donations">
+          <input type="hidden" name="business" value="riccardo.volonterio@gmail.com">
+          <input type="hidden" name="lc" value="US">
+          <input type="hidden" name="item_name" value="Hodor">
+          <input type="hidden" name="item_number" value="hodor">
+          <input type="hidden" name="no_note" value="0">
+          <input type="hidden" name="currency_code" value="EUR">
+          <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_SM.gif:NonHostedGuest">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
         </div>
       </div>
 
