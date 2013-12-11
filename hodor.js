@@ -22,10 +22,8 @@ function hodorize(node) {
     return;
   } else if (node.nodeType === Node.ELEMENT_NODE) {
 	
-	if( node.nodeName==='IMG' ) {
+	if( node.nodeName==='IMG' )
 	  node.src='http://volox.github.io/Hodorizer/images/hodor.png';
-	  node.style.width='auto';
-	}
 	if( node.nodeName==='A' )
 	  node.href='http://www.youtube.com/watch?v=EiazMhG7ZM8';
     // hodo-hodor hodor
